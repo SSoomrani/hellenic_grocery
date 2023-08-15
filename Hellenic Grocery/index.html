@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Greek Food Retail</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <script>
+        
+    // JavaScript to toggle active class on subcategory lists
+    document.addEventListener("DOMContentLoaded", function() {
+        var subcategoryHeadings = document.querySelectorAll(".product-listing h3");
+
+        subcategoryHeadings.forEach(function(subheading) {
+            subheading.addEventListener("click", function() {
+                var subcategoryList = this.nextElementSibling;
+                subcategoryList.classList.toggle("active");
+            });
+        });
+    });
+</script>
+<body>
+    <header>
+        <h1>Welcome to Hellenic Grocery!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="products.php">Featured Products</a></li>
+                
+                <li class="dropdown">
+                    <a href="./Frozen%20Foods/frozenfood.php">Frozen Foods</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./Frozen%20Foods/meat.php"> Meat and Poultry </a></li>
+                        <li><a href="./Frozen%20Foods/pita.php"> Pita Bread </a></li>
+                        <li><a href="./Frozen%20Foods/frozenseafood.php"> Frozen Seafood </a></li>
+                        <li><a href="./Frozen%20Foods/frozenvegetables.php"> Frozen Vegetables </a></li>
+                        <li><a href="./Frozen%20Foods/pastries.php"> Filo and Puff Pastries </a></li>
+                    </ul>
+                </li>
+                        
+                <li class="dropdown">
+                    <a href="freshfood.php">Fresh Foods</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./Fresh%20Foods/freshseafood.php"> Fresh Seafood </a></li>
+                        <li><a href="./Fresh%20Foods/cheese.php"> Cheese </a></li>
+                        <li><a href="./Fresh%20Foods/coldcuts.php"> Cold Cuts </a></li>
+                        <li><a href="./Fresh%20Foods/dips.php"> Dips </a></li>
+                        <li><a href="./Fresh%20Foods/sausages.php"> Sausages and Others </a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                <a href="cooking.php"> Cooking and Baking </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./Cooking%20and%20Baking/legume.php"> Legumes </a></li>
+                        <li><a href="./Cooking%20and%20Baking/pasta.php"> Pasta </a></li>
+                        <li><a href="./Cooking%20and%20Baking/ingredients.php"> Ingredients </a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                <a href="cupboard.php">Food Cupboard</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./Food%20Cupboard/bakery.php"> Bakery </a></li> 
+                        <li><a href="./Food%20Cupboard/tin.php"> Cans and Tins </a></li>
+                        <li><a href="./Food%20Cupboard/snack.php"> Snacks </a></li>
+                        <li><a href="./Food%20Cupboard/spread.php"> Spreads </a></li>
+                        <li><a href="./Food%20Cupboard/sauce.php"> Sauces and Dressings </a></li>
+                </ul>
+                </li>
+    
+                <li class="dropdown">
+                <a href="season.php">Seasonal Foods</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./Seasonal%20Foods/xmas.php"> Xmas Season </a></li> 
+                        <li><a href="./Seasonal%20Foods/easter.php"> Easter Season </a></li>
+                </ul>
+                </li> 
+    
+                <li class="dropdown">
+                <a href="drink.php">Drinks</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./Drinks/beer.php"> Beers </a></li>
+                        <li><a href="./Drinks/wine.php"> Wines </a></li>
+                        <li><a href="./Drinks/greekspirit.php"> Greek Spirits </a></li>
+                        <li><a href="./Drinks/softdrink.php"> Soft Drinks </a></li>
+                        <li><a href="./Drinks/otherdrink.php"> Other Drinks </a></li>
+                    </ul>
+                </li>
+                        
+                <li class="dropdown">
+                <a href="dessert.php"> Desserts </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./Desserts/cake.php"> Cakes </a></li>
+                        <li><a href="./Desserts/spoonsweet.php"> Spoon Sweets </a>
+                        <li><a href="./Desserts/halva.php"> Halva </a></li>
+                        <li><a href="./Desserts/loukoumi.php"> Loukoumi </a></li>
+            </ul>
+        </li>
+                <li><a href="./Sales/sales.php">Sales</a></li>
+                <li><a href="./Blog/blog.php"> Blog </a></li>
+        </nav>
+    </header>
+    <main>
+    </main>
+    <footer>
+        <p>&copy; 2023 Modern Greek Food Retail</p>
+    </footer>
+</body>
+</html>
