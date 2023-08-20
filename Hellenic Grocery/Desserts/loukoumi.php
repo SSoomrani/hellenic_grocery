@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 
 // Fetch fresh food products from the database
 $products = [];
-$sql = "SELECT id, name, price, image_url FROM products WHERE category = 'Fresh Food'";
+$sql = "SELECT id, name, price, image_url FROM products WHERE category = 'Loukoumi'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {

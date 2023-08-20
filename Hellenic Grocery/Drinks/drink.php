@@ -40,20 +40,19 @@ $conn->close();
     <main>
         <section class="product-listing">
             <h2>Drinks</h2>
-            <ul>
+             <ul>
                 <?php foreach ($products as $product): ?>
                     <li>
-                        <img src="<?php echo $product['image_url']; ?>" alt="<?php echo $product['name']; ?>">
-                        <h3><?php echo $product['name']; ?></h3>
-                        <p class="price">$<?php echo $product['price']; ?></p>
-                        <a href="product_details.php?id=<?php echo $product['id']; ?>">View Details</a>
+                        <a href="product_details.php?id=<?php echo $product['id']; ?>">
+                            <?php echo $product['name']; ?>
+                        </a>
+                        <span class="price">$<?php echo $product['price']; ?></span>
                     </li>
                 <?php endforeach; ?>
             </ul>
         </section>
     </main>
-    <footer>
-        <!-- Footer content as needed -->
-    </footer>
+
+    <!-- Footer content same as index.html -->
 </body>
 </html>
